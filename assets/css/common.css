@@ -1,0 +1,43 @@
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+
+
+.inner{
+    width: 1130px;
+    margin: 0 auto;
+}
+
+
+.sc-login .link-login::before,
+.sc-news .group-title .set-area .btn-set::after,
+.gnb .nav-area .nav-item .nav.ic-mail::before,
+.header .service-area a::after,
+.header .logo a,
+.header .search-area .btn-submit::before{
+    background-image: url(../images/sp-bg.png);
+    background-size: 442px;
+    background-repeat: no-repeat;
+}
+
+
+
+.thumb-bd{
+    position: relative;
+    display: block;
+}
+.thumb-bd::before{
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+    /* background: #f00; */
+    border: 1px solid #000;
+    opacity: 0.1;
+
+    content: '';
+}
